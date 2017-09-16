@@ -49,10 +49,10 @@ if (cmd === 'create') {
     const age = Number.parseInt(process.argv[3]);
     const kind = process.argv[4];
     const name = process.argv[5];
-    console.log(pets);
-    console.log(typeof age);
-    console.log(kind);
-    console.log(name);
+    // console.log(pets);
+    // console.log(typeof age);
+    // console.log(kind);
+    // console.log(name);
     //check for validity/existence
     if (Number.isNaN(age) || kind === undefined || name === undefined) {
       console.error("Usage: node pets.js create AGE KIND NAME");
@@ -78,6 +78,9 @@ if (cmd === 'create') {
   }); //end of read
 
 } //end of create conditional
+
+
+//REFLECTION: this was hard because I kept lost in all my {}. I tore it apart a couple of time when I got to an impasse. Other issues: STOP freaking out every time something doesn't work. Usually it's some typo. Duh... it won't pass test because I have extra logs while I was debugging.  lol. roll eyes. Meh... Sigh... repeat...
 
 //fill these in later for bonus:
 
