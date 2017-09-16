@@ -2,6 +2,10 @@
 
 const fs = require('fs');
 const path = require('path');
+//the path module
+//const petsPath = path.join(__dirname, 'pets.json');
+//the actual path to pets.json
+//console.log(petsPath)
 
 //const create = require('./create')
 
@@ -23,7 +27,6 @@ if(cmd ==='read'){
         console.log(petArr);
         process.exit(0);
       }else if(i<0||i>=petArr.length){
-        console.log('petArr', petArr.length);
         console.error("Usage: node pets.js read INDEX")
         process.exit(1);
       } else if(i !== undefined){
@@ -36,6 +39,17 @@ if(cmd ==='read'){
 
 }//end of read conditional
 
-// if(cmd ==='create'){
-//   console.log('create it');
-// }
+if(cmd ==='create'){
+
+//   $ node pets.js create 3 parakeet Cornflake
+// { age: 3, kind: 'parakeet', name: 'Cornflake' }
+
+}
+
+if(cmd ==='update'){
+  console.log('update it');
+}
+
+if(cmd ==='delete'){
+  console.log('delete it');
+}

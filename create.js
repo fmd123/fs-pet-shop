@@ -1,6 +1,6 @@
 console.log("starting create.js");
 
-var createPet = (age, kind, name)=>{
+var createPet = (age, kind, name) => {
   console.log("adding this pet: ", age, kind, name);
 
 }
